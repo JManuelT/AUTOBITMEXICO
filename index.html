@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Venta de Autos</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header>
+      <h1>AUTO BIT MÉXICO</h1>
+      <nav> 
+        <ul>
+          <li><a href="#inicio">Inicio</a></li>
+          <li><a href="#autos">Autos en Venta</a></li>
+          <li><a href="#contacto">Contacto</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <section id="inicio">
+        <h2>Bienvenido a nuestra tienda de autos</h2>
+        <p>Encuentra el auto de tus sueños pagando con crypto.</p>
+      </section>
+
+      <section id="autos">
+        <h2>Autos en Venta</h2>
+        <div class="auto" id="teslamodels">
+          <img src="images/TeslaModelS.jpeg" alt="TESLA MODEL S" />
+          <img src="images/TeslaModelSCostado.jpeg" alt="TESLA MODEL S" />
+          <img src="images/TeslaModelSTrasera.jpeg" alt="TESLA MODEL S" />
+         
+        </div>
+        <h3>Tesla Model S Plaid</h3>
+        <p>
+          637km autonomía, Color Negro Solido, Tracción integral, Precio:
+          $2,036,000 pesos MXN.
+        </p>
+        <button>Comprar</button>
+        <hr>
+        <div class="auto" id="teslamodel3">
+          <img src="images/TeslaModel3.jpeg" alt="TESLA MODEL 3" />
+          <img src="images/TeslaModel3Costado.jpeg" alt="TESLA MODEL 3" />
+          <img src="images/TeslaModel3Trasera.jpeg" alt="TESLA MODEL 3" />
+        </div>
+        <h3>Tesla Model 3</h3>
+          <p>
+            438km autonomía, Color Metálico plateado media noche, Tracción
+            trasera, Precio $1,155,000 pesos MXN.
+          </p>
+          <button>Comprar</button>
+          <hr>
+        <div class="auto" id="teslamodelx">
+          <img src="images/TeslaModelX.jpeg" alt="TESLA MODEL X" />
+          <img src="images/TeslaModelXCostado.jpeg" alt="TESLA MODEL X" />
+          <img src="images/TeslaModelXTrasera.jpeg" alt="TESLA MODEL X" />
+        </div>
+        <h3>Tesla Model X</h3>
+          <p>
+            536km autonomía, Color Blanco perla, Tracción integral, Precio
+            $2,125,000 pesos MXN.
+          </p>
+          <button>Comprar</button>
+        <hr>
+        <!-- Puedes agregar más autos con la misma estructura -->
+      </section>
+
+      <section id="contacto">
+        <h2>Contacto</h2>
+        <p>Completa el formulario para más información:</p>
+        <form action="procesar_formulario.php" method="post">
+          <label for="nombre">Nombre:</label>
+          <input type="text" id="nombre" name="nombre" required />
+          <label for="email">Email:</label>
+          <input type="email" id="email" name="email" required />
+          <label for="mensaje">Mensaje:</label>
+          <textarea id="mensaje" name="mensaje" required></textarea>
+          <input type="submit" value="Enviar" />
+        </form>
+      </section>
+    </main>
+
+    <footer>
+      <p>Derechos reservados &copy; 2023 AUTOBITMEXICO</p>
+    </footer>
+  </body>
+</html>

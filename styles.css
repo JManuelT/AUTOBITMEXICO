@@ -1,0 +1,79 @@
+/* Reset de estilos para eliminar márgenes y rellenos por defecto */
+body, h1, h2, h3, p, ul {
+    margin: 0;
+    padding: 0;
+  }
+  
+  /* Estilos generales */
+  body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+  }
+  
+  header {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+  }
+  
+  nav ul {
+    list-style: none;
+  }
+  
+  nav ul li {
+    display: inline;
+    margin-right: 20px;
+  }
+  
+  a {
+    color: #fff;
+    text-decoration: none;
+  }
+  
+  main {
+    padding: 20px;
+  }
+  
+  section {
+    margin-bottom: 30px;
+  }
+  
+  .auto {
+    /* ... Otros estilos ... */
+    display: flex; /* Utilizamos flexbox para alinear las imágenes */
+    flex-wrap: nowrap; /* Las imágenes no se envuelven a la siguiente línea */
+    overflow-x: auto; /* Agregamos scroll horizontal si las imágenes exceden el ancho */
+  }
+  .auto img {
+    max-width: 100%;
+    height: auto;
+    margin-right: 10px; /* Espacio entre cada imagen */
+  }
+ 
+  footer {
+    text-align: center;
+    padding: 10px;
+    background-color: #333;
+    color: #fff;
+    position: fixed;
+    bottom: 0;
+    width: auto;
+  }
+  button,
+a.comprar-button {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #333;
+  color: #fff;
+  text-decoration: none;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+button:hover,
+a.comprar-button:hover {
+  background-color: #555;
+}
